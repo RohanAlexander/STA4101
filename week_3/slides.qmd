@@ -44,6 +44,8 @@ format:
 
 ![From @gold2024, Chapter 1.](2.png)
 
+*Discussion: Have you tried to share your work before and not had it run on someone else's computer?*
+
 ::: {.notes}
 - One of the core issues DevOps addresses is the "works on my machine" problem. If you've ever collaborated on a data science project, you've almost certainly reached a point where something worked on your laptop but not for your colleague, and you don't know why.
 - The code you're writing relies on the environment in which it runs. While most data scientists have ways to share code, sharing environments isn't always standard practice, but it should be. We can take lessons from DevOps, where the solution is to create explicit linkages between the code and the environment so you can share both.
@@ -138,6 +140,8 @@ Success means:
   2. Processing layer
   3. Data layer
 - Doesn't exactly map to data science, but we can still benefit from thinking seriously about it, especially the presentation layer.
+
+*Discussion: Have you thought about separating aspects in this way before?*
 
 ::: {.notes}
 - A three-layer app is divided into:
@@ -246,7 +250,7 @@ Most data science projects fall into the following categories:
 
 ![From @gold2024, Chapter 3.](7.png)
 
-*Discussion: Show code to interact with the OpenDataToronto API.*
+*Discussion: Which APIs have you used?*
 
 ::: {.notes}
 - Some data sources come in the form of an API.
@@ -265,6 +269,8 @@ Most data science projects fall into the following categories:
 - Each request to an API is directed to a specific endpoint. 
 - The HTTP verb, also known as the request method, describes the type of operation you're asking for.
 - Commonly used verbs are: GET and POST.
+
+*Discussion: Can someone who did last week's homework please share the code they used to interact with the OpenDataToronto API.*
 
 ::: {.notes}
 - Each request to an API is directed to a specific endpoint. 
@@ -533,8 +539,6 @@ When it comes to data science if we're wrong we want to know about it. Observabi
     - RUN – Run any command as if you were sitting at the command line inside the container.
     - COPY – Copy a file from the host filesystem into the container.
     - CMD – Specify what command to run on the container's shell when it runs, usually the last line of the Dockerfile.
-
-*Activity: Get the Zenodo file, download Docker, and attempt to get the container running*.
 
 ::: {.notes}
 A Dockerfile is a set of instructions to build a Docker image. 

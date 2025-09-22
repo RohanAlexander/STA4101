@@ -1,7 +1,7 @@
 ---
 title: "Demonstration"
 author: "Rohan Alexander"
-date: "2025-09-15"
+date: "2025-09-22"
 date-format: "D MMMM, YYYY"
 format: pdf
 bibliography: references.bib
@@ -42,6 +42,82 @@ print(aggregated_df)
 
 
 # Fitting ridge, lasso, logistic, Poisson, and random forests with scikit-learn
+
+```{python}
+#| eval: false
+#| echo: true
+
+uv add scikit-learn polars seaborn pandas
+```
+
+```{python}
+#| eval: false
+#| echo: true
+
+# titanic_sklearn_polars.py
+import seaborn as sns
+import polars as pl
+import pandas as pd
+
+from sklearn.model_selection import train_test_split
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.pipeline import Pipeline
+from sklearn.impute import SimpleImputer
+
+# 1) Load → polars
+titanic_pd = sns.load_dataset("titanic")  # returns pandas
+df = pl.from_pandas(titanic_pd)
+
+# Keep a small, robust subset of columns
+cols = ["survived","pclass","sex","age","sibsp","parch","fare","embarked"]
+df = df.select(cols)
+
+# Basic cleaning with polars (drop rows missing in key fields we’ll use)
+df = df.drop_nulls(subset=["pclass","sex","embarked"])  # keep target-specific handling later
+
+# Back to pandas for sklearn
+df_pd = df.to_pandas()
+
+# Common feature sets
+num_features = ["pclass","age","sibsp","parch","fare"]
+cat_features = ["sex","embarked"]
+
+# Preprocessor: impute + one-hot
+preprocessor = ColumnTransformer(
+    transformers=[
+        ("num", SimpleImputer(strategy="median"), num_features),
+        ("cat", Pipeline([
+            ("imputer", SimpleImputer(strategy="most_frequent")),
+            ("ohe", OneHotEncoder(handle_unknown="ignore"))
+        ]), cat_features),
+    ]
+)
+```
+
+```{python}
+#| eval: false
+#| echo: true
+
+
+```
+
+
+
+```{python}
+#| eval: false
+#| echo: true
+
+
+```
+
+
+```{python}
+#| eval: false
+#| echo: true
+
+
+```
 
 # Implementing bootstrap and cross-validation
 
