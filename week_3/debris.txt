@@ -1,0 +1,80 @@
+## CI/CD automates Git operations
+
+::: {.notes}
+The role of Git is to make your code promotion process happen. Git allows you to configure requirements for whatever approvals and testing you need. Your CI/CD tool sits on top of that so that all this merging and branching does something.1
+
+To be more precise, a CI/CD pipeline for a project watches the Git repository and does something based on a trigger. Common triggers include a push or merge to a particular branch or a pull request opening.
+
+The most common CI/CD operations are pre-merge checks like spell checking, code linting, automated testing, and post-merge deployments.
+
+There are a variety of different CI/CD tools available. Because of the tight linkage between CI/CD operations and Git repos, CI/CD pipelines built into Git providers are very popular.
+:::
+
+
+## Quick Intro to GitHub Actions
+While there are a number of CI/CD pipeline tools, including Jenkins, Travis, Azure DevOps, and GitLab, GitHub Actions immediately rocketed to number one when it was released a few years ago. At this point, many organizations are quickly moving their CI/CD into GitHub Actions if they haven't already done so.
+
+GitHub Actions are defined in .yml files that go in the .github/workflows directory of a project. GitHub knows to inspect that directory and kick off any prescribed actions when there are changes to the repo. Let's talk about some of the basics of understanding and using GitHub Actions.
+
+Actions occur in response to specific triggers. A trigger consists of the specific Git operations that run the action as well as which branches are being watched. In GitHub Actions, the on section defines when the workflow runs. A basic one might look something like this:
+
+.github/workflows/publish.yml
+on:
+  workflow_dispatch:
+1  push:
+2    branches: main
+
+1
+This Action runs on a push, which includes s completed merge.
+2
+This Action runs based on operations on the main branch.
+Other common patterns include pre-merge checks that trigger on the creation of a pull request or a test deployment on a push to a test branch.
+
+Once the job has been triggered, it kicks off a runner, which is the virtual machine where the job runs. The jobs section of a GitHub Action defines the runner.
+
+.github/workflows/publish.yml
+jobs:
+1  deploy:
+2    runs-on: ubuntu-latest
+
+1
+The name of this job is deploy. There can be multiple jobs per action.
+2
+This job runs on the latest Ubuntu release.
+GitHub Actions offers runners with Ubuntu, Windows, and MacOS. You can also add custom runners. Depending on the level of reproducibility you're aiming for, you might want to lock the runner to a particular version of the operating system rather than just running latest.
+
+Once the job is kicked off and the runner is live, it's time to actually do something. Because the default runners are all basically bare operating systems, the action needs to include steps to build the environment before you can actually run any code. Depending on what you're doing, that will mean installing OS dependencies, installing Python and/or R, and installing R and Python packages for whatever content you're running.
+
+In GitHub Actions, the jobs section defines the set of steps that comprise the action. Most steps use the uses command to run an action that someone else wrote. Some actions accept variables with the with command. In order to ensure that your Actions can remain flexible and your secrets secret, GitHub Actions allows you to pull a value from the GitHub GUI and use it in a step with the ${{ <variable > }} syntax.
+
+For example, here's a made up action to publish to a server with a URL and API Key:
+
+.github/workflows/publish.yml
+- name: Publish to a server
+1  uses: server-dev/server-actions/publish@v2
+  with:
+2    server-name: my-server
+    SERVER_URL: my-server.com
+3    SERVER_API_KEY: ${{ secrets.SERVER_API_KEY }}
+
+1
+This job uses version 2 (@v2) of the publish action from the (imaginary) GitHub repo server-dev/server-actions.
+2
+This job is being provided a value of my-server for the server-name variable.
+3
+The variable SERVER_API_KEY will be set to the value stored in the GitHub Actions secrets variable called SERVER_API_KEY.
+Some jobs require secrets be in an environment variable, which can be set just like a regular variable, but with env in place of with.
+
+If you want to do something that doesn't have a preexisting action, you can use a run step to run a command as if at a terminal on the runner, like this:
+
+.github/workflows/publish.yml
+- name: Install Python and Dependencies
+  uses: actions/setup-python@v4 # <1>
+  with:
+    python-version: '3.10'
+    cache: 'pip'
+- run: pip install -r requirements.txt # <2>
+
+This line uses the uses syntax with the setup-python action.
+This line uses the run command to just run the line.
+

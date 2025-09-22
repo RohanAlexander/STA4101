@@ -3,7 +3,6 @@ title: "Effective graphs"
 author: "Arno and Garry"
 date: "2025-09-15"
 date-format: "D MMMM, YYYY"
-bibliography: references.bib
 format:
   revealjs:
     slide-number: "c/t"

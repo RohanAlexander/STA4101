@@ -1,0 +1,49 @@
+---
+title: "Demonstration"
+author: "Rohan Alexander"
+date: "2025-09-15"
+date-format: "D MMMM, YYYY"
+format: pdf
+bibliography: references.bib
+---
+
+# Generating synthetic datasets
+
+# Make effective graphs and tables
+
+Manipulate the data into a summary table.
+
+```{python}
+#| eval: false
+#| echo: true
+#| warning: false
+#| message: false
+
+import polars as pl
+
+df = pl.read_parquet("cleaned_shelter_usage.parquet")
+
+# Convert the date column to datetime and rename it for clarity
+df = df.with_columns(pl.col("date").str.strptime(pl.Date, "%Y-%m-%d").alias("date"))
+
+# Group by "Dates" and calculate total "Capacity" and "Usage"
+aggregated_df = (
+    df.group_by("date")
+    .agg([
+        pl.col("Capacity").sum().alias("Total_Capacity"),
+        pl.col("Usage").sum().alias("Total_Usage")
+    ])
+    .sort("date")  # Sort the results by date
+)
+
+# Display the aggregated DataFrame
+print(aggregated_df)
+```
+
+
+# Fitting ridge, lasso, logistic, Poisson, and random forests with scikit-learn
+
+# Implementing bootstrap and cross-validation
+
+# Quarto docs
+
