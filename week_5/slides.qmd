@@ -1,0 +1,348 @@
+---
+title: "Writing and editing"
+author: "Rohan Alexander"
+date: "2025-10-06"
+date-format: "D MMMM, YYYY"
+bibliography: references.bib
+format:
+  revealjs:
+    slide-number: "c/t"
+    show-slide-number: all
+---
+
+# How to get better at writing
+
+> If you want to be a writer, you must do two things above all others: read a lot and write a lot. There's no way around these two things that I'm aware of, no shortcut.
+>
+> @stephenking [p. 145]
+
+::: {.notes}
+- We predominately tell stories with data by writing them down. Writing allows us to communicate efficiently. It is also a way to work out what we believe and allows us to get feedback on our ideas. Effective papers are tightly written and well-organized, which makes their story flow well. Proper sentence structure, spelling, vocabulary, and grammar are important because they remove distractions and enable each aspect of the story to be clearly articulated.
+- We are focused on writing short, detailed, quantitative papers that communicate what you want them to, and do not waste the reader's time. We write for the reader, not for ourselves. Specifically, we write to be useful to the reader. This means clearly communicating something new, true, and important [@grahamhowtowriteusefully]. That said, the greatest benefit of writing nonetheless often accrues to the writer, even when we write for our audience. This is because the process of writing is a way to work out what we think and how we came to believe it.
+:::
+
+## Writing
+
+> The way to do a piece of writing is three or four times over, never once. For me, the hardest part comes first, getting something---anything---out in front of me. Sometimes in a nervous frenzy I just fling words as if I were flinging mud at a wall. Blurt out, heave out, babble out something---anything---as a first draft.
+>
+> @draftnumberfour [p. 159]
+
+::: {.notes}
+- The process of writing is a process of rewriting. The critical task is to get to a first draft as quickly as possible. Until that complete first draft exists, it is useful to try to not to delete, or even revise, anything that was written, regardless of how bad it may seem. Just write.
+:::
+
+## Outline
+
+- "Introduction"
+- "Data"
+- "Model"
+- "Results"
+- "Discussion"
+
+::: {.notes}
+- One of the most intimidating stages is a blank page, and we deal with this by immediately adding headings such as: "Introduction", "Data", "Model", "Results", and "Discussion". And then adding fields in the top matter for the various bits and pieces that are needed, such as "title", "date", "author", and "abstract". This creates a generic outline, which will play the role of *mise en place* for the paper. By way of background, *mise en place* is a preparatory phase in a professional kitchen when ingredients are sorted, prepared, and arranged for easy access. This ensures that everything that is needed is available without unnecessary delay. Putting together an outline plays the same role when writing quantitative papers, and is akin to placing on the counter, the ingredients that we will use to prepare dinner. 
+
+While writing the first draft\index{writing!first draft} you should ignore the feeling that you are not good enough, or that it is impossible. Just write. You need words on paper, even if they are bad, and the first draft is when you accomplish this. Remove distractions and focus on writing. Perfectionism is the enemy, and should be set aside. Sometimes this can be accomplished by getting up very early to write, by creating a deadline, or forming a writing group. Creating a sense of urgency can be useful and one option is to not bother with adding proper citations as you go, which could slow you down, and instead just add something like "[TODO: CITE R HERE]". Do similar with graphs and tables. That is, include textual descriptions such as "[TODO: ADD GRAPH THAT SHOWS EACH COUNTRY OVER TIME HERE]" instead of actual graphs and tables. Focus on adding content, even if it is bad. When this is all done, a first draft exists.
+
+This first draft will be poorly written and far from great. But it is by writing a bad first draft that you can get to a good second draft, a great third draft, and eventually excellence [@birdbybird, p. 20]. That first draft will be too long, it will not make sense, it will contain claims that cannot be supported, and some claims that should not be. If you are not embarrassed by your first draft, then you have not written it quickly enough. 
+:::
+
+
+## Revising
+
+- Use the "delete" key extensively
+- Think about how a paragraph supports the story.
+- Fix references.
+- Update research questions.
+- Re-write Introduction and then Abstract.
+- Read on paper!
+
+::: {.notes}
+- Use the "delete" key extensively, as well as "cut" and "paste", to turn that first draft into a second. Print the draft and using a red pen to move or remove words, sentences, and entire paragraphs, is especially helpful. The process of going from a first draft to a second draft is best done in one sitting, to help with the flow and consistency of the story. One aspect of this first rewrite is enhancing the story that we want to tell. Another aspect is taking out everything that is not the story [@stephenking, p. 57]. 
+- It can be painful to remove work that seems good even if it does not quite fit into what the draft is becoming.\index{writing!removing content} One way to make this less painful is to make a temporary document, perhaps named "debris.qmd", to save these unwanted paragraphs instead of immediately deleting them. Another strategy is to comment out the paragraphs. That way you can still look at the raw file and notice aspects that could be useful.
+- As you go through what was written in each of the sections try to bring some sense to it with special consideration to how it supports the story that is developing. This revision process is the essence of writing [@draftnumberfour, p. 160]. You should also fix the references, and add the real graphs and tables. As part of this rewriting process, the paper's central message tends to develop, and the answers to the research questions tend to become clearer. At this point, aspects such as the introduction can be returned to and, finally, the abstract. Typos and other issues affect the credibility of the work. So these should be fixed as part of the second draft.\index{writing!typos} 
+- At this point the draft is starting to become sensible. The job is to now make it brilliant. Print it and again go through it on paper. Try to remove everything that does not contribute to the story. At about this stage, you may start to get too close to the paper. This is a great opportunity to give it to someone else for their comments. Ask for feedback about what is weak about the story. After addressing these, it can be helpful to go through the paper once more, this time reading it aloud. A paper is never "done" and it is more that at a certain point you either run out of time or become sick of the sight of it.
+:::
+
+## Asking questions
+
+1) data-first; or
+2) question-first. 
+
+*Question: What approach do you think @ahstonanderson took?*
+
+
+::: {.notes}
+- Both qualitative and quantitative approaches have their place. In this book we focus on quantitative approaches. Nonetheless qualitative research is important, and often the most interesting work has a little of both. When conducting quantitative analysis, we are subject to issues such as data quality, measurement, and relevance. We are often especially interested in trying to tease out causality. Regardless, we are trying to learn something about the world. Our research questions need to take this all into account.
+- Broadly, and at the risk of over-simplification, there are two ways to go about research: 
+    1) data-first; or
+    2) question-first. 
+- But it is not a binary, and often research proceeds by iterating between data and questions, organized around a research puzzle.
+- @ahstonanderson examine eight billion unique listening events from 100,000 Spotify\index{Spotify!content exploration} users to understand how users explore content. They find a clear relationship between age and behavior, with younger users exploring unknown content less than older users, despite having more diverse consumption. While it is clear that research questions around discovery and exploration drive this paper, it would not have been possible without access to this dataset. There likely would have been an iterative process where potential research questions and potential datasets were considered, before the ultimate match.
+:::
+
+## Data-first
+
+1) Theory.
+2) Importance.
+3) Availability.
+4) Iteration.
+
+
+::: {.notes}
+When being data-first\index{quantitative research!data-first}, the main issue is working out the questions that can be reasonably answered with the available data. When deciding what these are, it is useful to consider:
+
+1) Theory: Is there a reasonable expectation that there is something causal that could be determined? For instance, Mark Christensen used to joke that if the question involved charting the stock market, then it might be better to hark back to *The Odyssey* and read bull entrails on a fire, because at least that way you would have something to eat at the end of the day. Questions usually need to have some plausible theoretical underpinning to help avoid spurious relationships. One way to develop theory, given data, is to consider "of what is this an instance?" [@ofwhatisthisaninstance, p. 7]. Following that approach, one tries to generalize beyond the specific setting. For instance, thinking of some particular civil war as an instance of all civil wars. The benefit of this is it focuses attention on the general attributes needed for building theory.
+2) Importance: There are plenty of trivial questions that can be answered, but it is important to not waste our time or that of the reader. Having an important question can also help with motivation when we find ourselves in, say, the fourth straight week of cleaning data and debugging code. In industry it can also make it easier to attract talented employees and funding. That said, a balance is needed; the question needs to have a decent chance of being answered. Attacking a generation-defining question might be best broken into chunks.
+3) Availability: Is there a reasonable expectation of additional data being available in the future? This could allow us to answer related questions and turn one paper into a research agenda.
+4) Iteration: Is this something that could be run multiple times, or is it a once-off analysis? If it is the former, then it becomes possible to start answering specific research questions and then iterate. But if we can only get access to the data once then we need to think about broader questions.
+
+There is a saying, sometimes attributed to Xiao-Li Meng, that all of statistics is a missing data problem.\index{statistics}\index{missing data} And so paradoxically, another way to ask data-first questions is to think about the data we do not have. For instance, returning to the neonatal and maternal mortality examples discussed earlier one problem is that we do not have complete cause of death data. If we did, then we could count the number of relevant deaths. Having established some missing data problem, we can take a data-driven approach. We look at the data we do have, and then ask research questions that speak to the extent that we can use that to approximate our hypothetical dataset.
+:::
+
+## Question-first
+
+- descriptive analysis: "What does $x$ look like?"; 
+- predictive analysis: "What will happen to $x$?"; 
+- inferential: "How can we explain $x$?"; and 
+- causal: "What impact does $x$ have on $y$?". 
+
+::: {.notes}
+When trying to be question-first\index{quantitative research!question-first}, there is the inverse issue of being concerned about data availability. The "FINER framework" is used in medicine to help guide the development of research questions. It recommends asking questions that are: Feasible, Interesting, Novel, Ethical, and Relevant [@hulley2007designing]. @farrugia2010research build on FINER with PICOT, which recommends additional considerations: Population, Intervention, Comparison group, Outcome of interest, and Time. 
+
+It can feel overwhelming trying to write out a question. One way to go about it is to ask a very specific question. Another is to decide whether we are interested in descriptive, predictive, inferential, or causal analysis. These then lead to different types of questions. For instance: 
+
+- descriptive analysis: "What does $x$ look like?"; 
+- predictive analysis: "What will happen to $x$?"; 
+- inferential: "How can we explain $x$?"; and 
+- causal: "What impact does $x$ have on $y$?". 
+
+Each of these have a role to play. Since the credibility revolution [@angrist2010credibility], causal questions answered with a particular approach have been predominant. This has brought some benefit, but not without cost. Descriptive analysis can be just as, indeed sometimes more, illuminating, and is critical [@Sen1980]. The nature of the question being asked matters less than being genuinely interested in answering it.
+
+Time will often be constrained, possibly in an interesting way and this can guide the specifics of the research question. If we are interested in the effect of a celebrity's announcements on the stock market, then that can be done by looking at stock prices before and after the announcement. But what if we are interested in the effect of a cancer drug on long term outcomes? If the effect takes 20 years, then we must either wait a while, or we need to look at people who were treated twenty years ago. We then have selection effects and different circumstances compared to if we were to administer the drug today. Often the only reasonable thing to do is to build a statistical model, but that brings other issues.
+:::
+
+# Components of a paper
+
+> I had not indeed published anything before I commenced *The Professor*, but in many a crude effort, destroyed almost as soon as composed, I had got over any such taste as I might once have had for ornamented and redundant composition, and come to prefer what was plain and homely.
+>
+> *The Professor* [@theprofessor]
+
+::: {.notes}
+- We discuss the following components: title, abstract, introduction, data, results, discussion, figures, tables, equations, and technical terms.
+- While there is sometimes a need for a separate literature review section, another approach is to discuss relevant literature throughout the paper as appropriate. For instance, when there is literature relevant to the data then it should be discussed in this section, while literature relevant to the model, results, or discussion should be mentioned as appropriate in those sections.
+- Throughout the paper try to be as brief and specific as possible. Most readers will not get past the title. Almost no one will read more than the abstract. Section and sub-section headings, as well as graph and table captions should work on their own, without the surrounding text, because that type of skimming is how many people read papers [@Keshav2007].
+:::
+
+## Title
+
+- "National, regional, and global levels and trends in neonatal mortality between 1990 and 2017, with scenario-based projections to 2030: a systematic analysis"
+- "The Increased Effect of Elections and Changing Prime Ministers on Topics Discussed in the Australian Federal Parliament between 1901 and 2018"
+- "Trends in Black and White Opioid Mortality in the United States, 1979–2015"
+- "How the closure of a US tax loophole may affect investor portfolios"
+- "Sex Bias in Graduate Admissions: Data from Berkeley: Measuring bias is harder than is usually assumed, and the evidence is sometimes contrary to expectation"
+
+::: {.notes}
+- A title is often among the last aspects of a paper to be finalized. While getting through the first draft, we typically use a working title that gets the job done. We then refine it over the course of redrafting. The title needs to reflect the final story of the paper, and this is not usually something that we know at the start. We must strike a balance between getting our reader interested enough to read the paper, and conveying enough of the content so as to be useful [@hayotacademicstyle]. Two excellent examples are *The History of England from the Accession of James the Second* by Thomas Babington Macaulay, and *A History of the English-Speaking Peoples* by Winston Churchill. Both are clear about what the content is, and, for their target audience, spark interest.
+- One specific approach is the form: "Exciting content: Specific content", for instance, "Returning to their roots: Examining the performance of Vote Leave in the 2016 Brexit referendum". @kennedy2020know provide a particularly nice example of this approach with "Know your population and know your model: Using model-based regression and poststratification to generalize findings beyond the observed sample", as does @craiu2019hiring with "The Hiring Gambit: In Search of the Twofer Data Scientist". A close variant of this is "A question? And an approach". For instance, @cahill2020increase with "What increase in modern contraceptive use is needed in FP2020 countries to reach 75% demand satisfied by 2030? An assessment using the Accelerated Transition Method and Family Planning Estimation Model". As you gain experience with this variant, it becomes possible to know when it is appropriate to drop the answer part yet remain effective, such as @briggs2021does with "Why Does Aid Not Target the Poorest?". Another specific approach is "Specific content then broad content" or the inverse. For instance, "Rurality, elites, and support for Vote Leave in the 2016 Brexit referendum" or "Support for Vote Leave in the 2016 Brexit referendum, rurality and elites". This approach is used by @tolley2021gender with "Gender, municipal party politics, and Montreal's first woman mayor".
+- Sometimes it is possible to include a subtitle. When this is possible, a great way to take advantage of this is to use it to include some detail of the main quantitative result that you found. Getting the right level of detail and abstraction about that result is difficult and will require re-writing and getting other's opinions.
+:::
+
+## Title
+### Specific approaches
+
+- "Exciting content: Specific content" e.g. "Know your population and know your model: Using model-based regression and poststratification to generalize findings beyond the observed sample".
+- "A question? And an approach" e.g. "What increase in modern contraceptive use is needed in FP2020 countries to reach 75% demand satisfied by 2030? An assessment using the Accelerated Transition Method and Family Planning Estimation Model"
+- "Specific content then broad content" or the inverse e.g. "Rurality, elites, and support for Vote Leave in the 2016 Brexit referendum".
+
+::: {.notes}
+- A title is often among the last aspects of a paper to be finalized. While getting through the first draft, we typically use a working title that gets the job done. We then refine it over the course of redrafting. The title needs to reflect the final story of the paper, and this is not usually something that we know at the start. We must strike a balance between getting our reader interested enough to read the paper, and conveying enough of the content so as to be useful [@hayotacademicstyle]. Two excellent examples are *The History of England from the Accession of James the Second* by Thomas Babington Macaulay, and *A History of the English-Speaking Peoples* by Winston Churchill. Both are clear about what the content is, and, for their target audience, spark interest.
+- One specific approach is the form: "Exciting content: Specific content", for instance, "Returning to their roots: Examining the performance of Vote Leave in the 2016 Brexit referendum". @kennedy2020know provide a particularly nice example of this approach with "Know your population and know your model: Using model-based regression and poststratification to generalize findings beyond the observed sample", as does @craiu2019hiring with "The Hiring Gambit: In Search of the Twofer Data Scientist". A close variant of this is "A question? And an approach". For instance, @cahill2020increase with "What increase in modern contraceptive use is needed in FP2020 countries to reach 75% demand satisfied by 2030? An assessment using the Accelerated Transition Method and Family Planning Estimation Model". As you gain experience with this variant, it becomes possible to know when it is appropriate to drop the answer part yet remain effective, such as @briggs2021does with "Why Does Aid Not Target the Poorest?". Another specific approach is "Specific content then broad content" or the inverse. For instance, "Rurality, elites, and support for Vote Leave in the 2016 Brexit referendum" or "Support for Vote Leave in the 2016 Brexit referendum, rurality and elites". This approach is used by @tolley2021gender with "Gender, municipal party politics, and Montreal's first woman mayor".
+- Sometimes it is possible to include a subtitle. When this is possible, a great way to take advantage of this is to use it to include some detail of the main quantitative result that you found. Getting the right level of detail and abstraction about that result is difficult and will require re-writing and getting other's opinions.
+:::
+
+## Abstract
+### General recipe
+
+1. first sentence: specify the general area of the paper and encourage the reader; 
+2. second sentence: specify the dataset and methods at a general level; 
+3. third sentence: specify the headline result; and 
+4. a fourth sentence about implications. 
+
+::: {.notes}
+- For a ten-to-fifteen-page paper, a good abstract is a three-to-five sentence paragraph. For a longer paper the abstract can be slightly longer. The abstract needs to specify the story of the paper. It must also convey what was done and why it matters. To do so, an abstract typically touches on the context of the work, its objectives, approach, and findings. 
+- More specifically, a good recipe for an abstract is: first sentence: specify the general area of the paper and encourage the reader; second sentence: specify the dataset and methods at a general level; third sentence: specify the headline result; and a fourth sentence about implications. 
+:::
+
+## Abstract
+### *Nature* recipe
+
+1) An introductory sentence that is comprehensible to a wide audience.
+2) A more detailed background sentence that is relevant to likely readers. 
+3) A sentence that states the general problem.
+4) Sentences that summarize and then explain the main results. 
+5) A sentence about general context.
+6) And finally, a sentence about the broader perspective. 
+
+::: {.notes}
+, a scientific journal, provides a guide for constructing an abstract. They recommend a structure that results in an abstract of six parts and adds up to around 200 words:
+
+The first sentence of an abstract should not be vacuous. Assuming the reader continued past the title, this first sentence is the next opportunity that we have to implore them to keep reading our paper. And then the second sentence of the abstract, and so on. Work and re-work the abstract until it is so good that you would be fine if that was the only thing that was read; because that will often be the case.
+:::
+
+## Abstract
+### Example 1
+
+> In 2017, Montreal elected Valérie Plante, the first woman mayor in the city’s 400-year history. Using this election as a case study, we show how gender did and did not influence the outcome. A survey of Montreal electors suggests that gender was not a salient factor in vote choice. Although gender did not matter much for voters, it did shape the organization of the campaign and party. We argue that Plante’s victory can be explained in part by a strategy that showcased a less leader-centric party and a degendered campaign that helped counteract stereotypes about women’s unsuitability for positions of political leadership.
+
+@tolley2021gender
+
+::: {.notes}
+- We see this pattern in a variety of abstracts. For instance, @tolley2021gender draw in the reader with their first sentence by mentioning the election of the first woman mayor in 400 years. The second sentence is clear about what is done in the paper. The third sentence tells the reader how it is done i.e. a survey, and the fourth sentence adds some detail. The fifth and final sentence makes the main take-away clear.
+:::
+
+## Abstract
+### Example 2
+
+> We provide a comprehensive assessment of the influence of television advertising on United States election outcomes from 2000–2018. We expand on previous research by including presidential, Senate, House, gubernatorial, Attorney General, and state Treasurer elections and using both difference-in-differences and border-discontinuity research designs to help identify the causal effect of advertising. We find that televised broadcast campaign advertising matters up and down the ballot, but it has much larger effects in down-ballot elections than in presidential elections. Using survey and voter registration data from multiple election cycles, we also show that the primary mechanism for ad effects is persuasion, not the mobilization of partisans. Our results have implications for the study of campaigns and elections as well as voter decision making and information processing.
+
+@sidesvavreckwarshaw
+
+::: {.notes}
+
+Another excellent example of an abstract is @sidesvavreckwarshaw. In just five sentences, they make it clear what they do, how they do it, what they find, and why it is important.
+
+> We provide a comprehensive assessment of the influence of television advertising on United States election outcomes from 2000–2018. We expand on previous research by including presidential, Senate, House, gubernatorial, Attorney General, and state Treasurer elections and using both difference-in-differences and border-discontinuity research designs to help identify the causal effect of advertising. We find that televised broadcast campaign advertising matters up and down the ballot, but it has much larger effects in down-ballot elections than in presidential elections. Using survey and voter registration data from multiple election cycles, we also show that the primary mechanism for ad effects is persuasion, not the mobilization of partisans. Our results have implications for the study of campaigns and elections as well as voter decision making and information processing.
+:::
+
+
+## Abstract
+### Example 3
+
+> We introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is possible to train state-of-the-art models using publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B is competitive with the best models, Chinchilla-70B and PaLM-540B. We release all our models to the research community.
+
+@touvron
+
+::: {.notes}
+The best abstracts will have such a high content to words ratio that they may even feel a little terse. For instance, in the abstract of @touvron, there is not a word that is wasted and they communicate a large amount of information in only four sentences.
+
+> We introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is possible to train state-of-the-art models using publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B is competitive with the best models, Chinchilla-70B and PaLM-540B. We release all our models to the research community.
+:::
+
+
+## Abstract
+### Example 4
+
+> We consider an experimental setting in which a matching of resources to participants has to be chosen repeatedly and returns from the individual chosen matches are unknown but can be learned. Our setting covers two-sided and one-sided matching with (potentially complex) capacity constraints, such as refugee resettlement, social housing allocation, and foster care. We propose a variant of the Thompson sampling algorithm to solve such adaptive combinatorial allocation problems. We give a tight, prior-independent, finite-sample bound on the expected regret for this algorithm. Although the number of allocations grows exponentially in the number of matches, our bound does not. In simulations based on refugee resettlement data using a Bayesian hierarchical model, we find that the algorithm achieves half of the employment gains (relative to the status quo) that could be obtained in an optimal matching based on perfect knowledge of employment probabilities.
+
+@@kasymatching
+
+::: {.notes}
+@kasymatching provide an excellent example of a more statistical abstract. They clearly identify what they do and why it is important.
+
+> We consider an experimental setting in which a matching of resources to participants has to be chosen repeatedly and returns from the individual chosen matches are unknown but can be learned. Our setting covers two-sided and one-sided matching with (potentially complex) capacity constraints, such as refugee resettlement, social housing allocation, and foster care. We propose a variant of the Thompson sampling algorithm to solve such adaptive combinatorial allocation problems. We give a tight, prior-independent, finite-sample bound on the expected regret for this algorithm. Although the number of allocations grows exponentially in the number of matches, our bound does not. In simulations based on refugee resettlement data using a Bayesian hierarchical model, we find that the algorithm achieves half of the employment gains (relative to the status quo) that could be obtained in an optimal matching based on perfect knowledge of employment probabilities.
+:::
+
+## Introduction
+
+- An introduction needs to be self-contained and convey everything that a reader needs to know. 
+- For a ten-to-fifteen-page paper, an introduction may be two or three paragraphs of main content. 
+- The introduction should set the scene and give the reader some background. 
+
+::: {.notes}
+An introduction needs to be self-contained and convey everything that a reader needs to know. We are not writing a mystery story. Instead, we want to give away the most important points in the introduction. For a ten-to-fifteen-page paper, an introduction may be two or three paragraphs of main content. @hayotacademicstyle [p. 90] says the goal of an introduction is to engage the reader, locate them in some discipline and background, and then tell them what happens in the rest of the paper. It should be completely reader-focused.
+
+The introduction should set the scene and give the reader some background. For instance, we typically start a little broader. This provides some context to the paper. We then describe how the paper fits into that context, and give some high-level results, especially focused on the one key result that is the main part of the story. We provide more detail here than we provided in the abstract, but not the full extent. And we broadly discuss next steps in a sentence or two. Finally, we finish the introduction with an additional short final paragraph that highlights the structure of the paper.
+
+As an example (with made-up details):
+
+> The UK Conservative Party has always done well in rural electorates. And the 2016 Brexit vote was no different with a significant difference in support between rural and urban areas. But even by the standard of rural support for conservative issues, support for "Vote Leave" was unusually strong with "Vote Leave" being most heavily supported in the East Midlands and the East of England, while the strongest support for "Remain" was in Greater London.
+>
+> In this paper we look at why the performance of "Vote Leave" in the 2016 Brexit referendum was so correlated with rurality. We construct a model in which support for "Vote Leave" at a voting area level is explained by the number of farms in the area, the average internet connectivity, and the median age. We find that as the median age of an area increases, the likelihood that an area supported "Vote Leave" decreases by 14 percentage points. Future work could look at the effect of having a Conservative MP which would allow a more nuanced understanding of these effects.
+> 
+> The remainder of this paper is structured as follows: Section 2 discusses the data, Section 3 discusses the model, Section 4 presents the results, and finally Section 5 discusses our findings and some weaknesses.
+
+The introduction needs to be self-contained and tell the reader almost everything that they need to know. A reader should be able to only read the introduction and have an accurate picture of all the major aspects of the whole paper. It would be rare to include graphs or tables in the introduction. An introduction should close by telegraphing the structure of the paper. 
+:::
+
+
+## Data
+
+> When Rebekah walked out the front door of that little house, there was nothing---a roadrunner streaking behind some rocks with something long and wet dangling from his beak, perhaps, or a rabbit disappearing around a bush so fast that all she really saw was the flash of a white tail---but otherwise nothing. There was no movement except for the ripple of the leaves in the scattered trees, no sound except for the constant whisper of the wind$\dots$ If Rebekah climbed, almost in desperation, the hill in the back of the house, what she saw from its crest was more hills, an endless vista of hills, hills on which there was visible not a single house$\dots$ hills on which nothing moved, empty hills with, above them, empty sky; a hawk circling silently overhead was an event. But most of all, there was nothing human, no one to talk to.
+> 
+> @caroonworking [p. 146] 
+
+::: {.notes}
+Robert Caro, Lyndon Johnson's biographer, describes the importance of conveying "a sense of place" when writing a biography [@caroonworking, p. 141]. He defines this as "the physical setting in which a book's action is occurring: to see it clearly enough, in sufficient detail, so that he feels as if he himself were present while the action is occurring." He provides the following example:
+
+> When Rebekah walked out the front door of that little house, there was nothing---a roadrunner streaking behind some rocks with something long and wet dangling from his beak, perhaps, or a rabbit disappearing around a bush so fast that all she really saw was the flash of a white tail---but otherwise nothing. There was no movement except for the ripple of the leaves in the scattered trees, no sound except for the constant whisper of the wind$\dots$ If Rebekah climbed, almost in desperation, the hill in the back of the house, what she saw from its crest was more hills, an endless vista of hills, hills on which there was visible not a single house$\dots$ hills on which nothing moved, empty hills with, above them, empty sky; a hawk circling silently overhead was an event. But most of all, there was nothing human, no one to talk to.
+> 
+> @caroonworking [p. 146] 
+
+How thoroughly we can imagine the circumstances of Johnson's mother, Rebekah Baines Johnson. When writing our papers, we need to achieve that same sense of place, for our data, as Caro provides for the Hill County.\index{data!sense of place} We do this by being as explicit as possible. We typically have a whole section about it and this is designed to show the reader, as closely as possible, the actual data that underpin our story. 
+
+When writing the data section, we are beginning our answer to the critical question about our claim, which is, how is it possible to know this? [@draftnumberfour, p. 78]. An excellent example of a data section is provided by @doll1950smoking. They are interested in the effect of smoking between control and treatment groups. After clearly describing their dataset they use tables to display relevant cross-tabs and graphs to contrast groups. 
+
+In the data section we need to thoroughly discuss the variables in the dataset that we are using. If there are other datasets that could have been used, but were not, then this should be mentioned and the choice justified. If variables were constructed or combined, then this process and motivation should be explained. 
+
+We want the reader to understand what the data that underpin the results look like. This means that we should graph the data that are used in our analysis, or as close to them as possible. And we should also include tables of summary statistics. If the dataset was created from some other source, then it can also help to include an example of that original source. For instance, if the dataset was created from survey responses then the underlying survey questions should be included in an appendix. 
+
+Some judgment is required when it comes to the figures and tables in the data section. The reader should have the opportunity to understand the details, but it may be that some are better placed in an appendix. Figures and tables are a critical aspect of convincing people of a story. In a graph we can show the data and then let the reader decide for themselves. And using a table, we can summarize a dataset. At the very least, every variable should be shown in a graph and summarized in a table. If there are too many, then some of these could be relegated to  an appendix, with the critical relationships shown in the main body. Figures and tables should be numbered and then cross-referenced in the text, for instance, "Figure 1 shows$\dots$", "Table 1 describes$\dots$". For every graph and table there should be accompanying text that describes their main aspects, and adds additional detail.
+:::
+
+## Model
+
+- The model section typically begins with the model being written out, explained, and justified. 
+- After specifying the model with appropriate mathematical notation and cross-referencing it, the components of the model should then be defined and explained. 
+- Try to define each aspect of the notation. This helps convince the reader that the model was well-chosen and enhances the credibility of the paper. 
+- The model's variables should correspond to those that were discussed in the data section, making a clear link between the two sections.
+
+::: {.notes}
+We often build a statistical model that we will use to explore the data, and it is normal to have a specific section about this. At a minimum you should specify the equations that describe the model being used and explain their components with plain language and cross-references. 
+
+The model section typically begins with the model being written out, explained, and justified. Depending on the expected reader, some background may be needed. After specifying the model with appropriate mathematical notation and cross-referencing it, the components of the model should then be defined and explained. Try to define each aspect of the notation. This helps convince the reader that the model was well-chosen and enhances the credibility of the paper. The model's variables should correspond to those that were discussed in the data section, making a clear link between the two sections.
+
+There should be some discussion of how features enter the model and why. Some examples could include: 
+
+- Why use age rather than age-groups?
+- Why does state/province have a levels effect?
+- Why is gender a categorical variable? In general, we are trying to convey a sense that this is the appropriate model for the situation. We want the reader to understand how the aspects that were discussed in the data section assert themselves in the modeling decisions that were made.
+
+The model section should close with some discussion of the assumptions that underpin the model. It should also have a brief discussion of alternative models or variants. You want the strengths and weaknesses to be clear and for the reader to know why this particular model was chosen.
+
+At some point in this section, it is usually appropriate to specify the software that was used to run the model, and to provide some evidence of thought about the circumstances in which the model may not be appropriate. That second point would typically be expanded on in the discussion section. And there should be evidence of model validation and checking, model convergence, and/or diagnostic issues. Again, there is a balance needed here, and some of this content may be more appropriately placed in appendices. 
+
+When technical terms are used, they should be briefly explained in plain language for readers who might not be familiar with it.
+
+There may be papers that do not include a statistical model. In that case, this "Model" section should be replaced by a broader "Methodology" section. It might describe the simulation that was conducted, or contain more general details about the approach.
+:::
+
+## Results
+
+- In the results section, we want to communicate the outcomes of the analysis in a clear way and without too much focus on the discussion of implications.
+- The results section likely requires summary statistics, tables, and graphs.
+
+::: {.notes}
+Two excellent examples of results\index{writing!results} sections are provided by @kharecha2013prevented and @kiang2021racial. In the results section, we want to communicate the outcomes of the analysis in a clear way and without too much focus on the discussion of implications. The results section likely requires summary statistics, tables, and graphs. Each of those aspects should be cross-referenced and have text associated with them that details what is seen in each figure. This section should relay results; that is, we are interested in what the results are, rather than what they mean.
+
+This section would also typically include tables of graphs of coefficient estimates based on the modeling. Various features of the estimates should be discussed, and differences between the models explained. It may be that different subsets of the data are considered separately. Again, all graphs and tables need to have text in plain language accompany them. A rough guide is that the amount of text should be at least equal to the amount of space taken up by the tables and graphs. For instance, if a full page is used to display a table of coefficient estimates, then that should be cross-referenced and accompanied by about a full page of text about that table.
+:::
+
+## Discussion
+
+- The discussion section would typically begin with a sub-section that comprises a brief summary of what was done in the paper. 
+- This would be followed by two or three sub-sections that are devoted to the key things that we learn about the world from this paper. 
+- Then a sub-section focused on some of the weaknesses of what was done.
+- And the final sub-section is typically a few paragraphs.
+
+::: {.notes}
+A discussion\index{writing!discussion} section may be the final section of a paper and would typically have four or five sub-sections. 
+
+The discussion section would typically begin with a sub-section that comprises a brief summary of what was done in the paper. This would be followed by two or three sub-sections that are devoted to the key things that we learn about the world from this paper. These sub-sections are the main opportunity to justify or detail the implications of the story being told in the paper. Typically, these sub-sections do not see newly introduced graphs or tables, but are instead focused on what we learn from those that were introduced in earlier sections. It may be that some of the results are discussed in relation to what others have found, and differences could be attempted to be reconciled here.
+
+Following these sub-sections of what we learn about the world, we would typically have a sub-section focused on some of the weaknesses of what was done. This could concern aspects such as the data that were used, the approach, and the model. In the case of the model we are especially concerned with those aspects that might affect the findings. This can be especially difficult in the case of machine learning models and @realml provide guidance for aspects to consider. And the final sub-section is typically a few paragraphs that specify what is left to learn, and how future work could proceed.
+
+In general, we would expect this section to take at least 25 per cent of the total paper. This means that in an eight-page paper we would expect at least two pages of discussion.
+:::
+
+## References

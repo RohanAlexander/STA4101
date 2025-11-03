@@ -1,0 +1,13 @@
+---
+title: "Worksheet"
+author: "Rohan Alexander"
+date: "2025-09-22"
+date-format: "D MMMM, YYYY"
+format: pdf
+bibliography: references.bib
+---
+
+1. Three exercises from: 
+<https://ubc-dsci.github.io/reproducible-and-trustworthy-workflows-for-data-science/lectures/100-containerization-1.html>.
+
+2. Using a Docker instance: Get the Zenodo file - <https://zenodo.org/records/17106979> - and attempt to get the container running.
