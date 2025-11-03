@@ -1,13 +1,11 @@
 ---
 title: "Worksheet"
 author: "Rohan Alexander"
-date: "2025-09-22"
+date: "2025-11-03"
 date-format: "D MMMM, YYYY"
 format: pdf
 bibliography: references.bib
 ---
 
-1. Three exercises from: 
-<https://ubc-dsci.github.io/reproducible-and-trustworthy-workflows-for-data-science/lectures/100-containerization-1.html>.
-
-2. Using a Docker instance: Get the Zenodo file - <https://zenodo.org/records/17106979> - and attempt to get the container running.
+1. Work through Ch 15, in either Python or R: https://marginaleffects.com/bonus/plot.html.
+2. Create a BlueSky account and then get the scraper working.

@@ -570,9 +570,9 @@ Cohort, treatment, site, or other grouping information should be added as its ow
 All variable names should be unique.
 This absolutely applies to variables within the same dataset, but it should also apply to all variables across datasets within a project (e.g., across a teacher survey and a student survey). The reason is, at some point you may merge data across forms and end up with identical variable names (which programs will not allow).
 The exception to this rule is if you are collecting the same variables across time. In this case, identical variables should be named consistently across waves of data collection to allow easier comparison of information.
-If an item is named anx1 in the fall, name that same item anx1 again in the spring (see Section 9.4.1 for a discussion on accounting for time).
+If an item is named `anx1` in the fall, name that same item anx1 again in the spring (see Section 9.4.1 for a discussion on accounting for time).
 If you substantively change an item (substantive wording OR response options change) after at least one round of data has been collected, version your variable names to reduce errors in interpretation.
-For example, revised anx1 becomes anx1_v2.
+For example, revised `anx1` becomes `anx1_v2`.
 :::
 
 
